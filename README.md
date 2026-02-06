@@ -46,9 +46,11 @@ The data is structured as a nested dictionary where each frame maps to the detec
 - **Keypoints**: Represented in the XYC format, where X and Y are the coordinates of key points, and C is the confidence score associated with the detection of each keypoint.
 
 2-Anomaly Labels (.npy)
-Anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the video.
+Anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the video. The anomaly labels are provided in .npy format, with one label file for each video. The labeling follows the same naming pattern as the corresponding video file, ensuring easy mapping between the pickle file and its labels. So,each label file contains a NumPy array of binary values (0s and 1s), categorizing all frames into two groups: normal behavior or shoplifting. The length of the array corresponds to the total number of frames in the respective video. A value of 0 indicates a "normal" frame, where no shoplifting behavior is detected. A value of 1 indicates an "anomalous" frame, where shoplifting behavior is identified based on the observed actions within that frame.
 0: Normal behavior (e.g., browsing, walking).
 1: Shoplifting anomaly (e.g., pocket or bag concealment).
+
+
 
 ### Dataset Statistics
 
