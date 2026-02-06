@@ -47,7 +47,16 @@ Performance of state-of-the-art models on the RetailS Real-world Test Set:
 
 
 ##Citation
+If you find our work useful, please consider citing: 
 
+```bibetex
+@article{,
+  title={},
+  author={},
+  journal={},
+  year={}
+}
+```
 
 
 
