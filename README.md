@@ -18,7 +18,7 @@ RetailS is significantly larger and more diverse than previous retail security d
 
 <sub> Table 1: 
 | Subsets         | Normal Frames | Shoplifting Events| Shoplifting Frames | Camera Views |
-|------------------|---------|-------|-----|
+|------------------|---------|-------|-----|-----|
 | RetailS Train         |   19,971,589   | 0        | 0   | 6 |
 |Real-world Test          |   2,432    |  1,933       | 53    | 6 | 
 | Staged Test          |   20,578    |  20,335       | 898  | 6 |
