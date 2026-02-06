@@ -76,6 +76,15 @@ Performance of state-of-the-art models on the RetailS Real-world Test Set:
 
 
 
+## Dataset Download Instructions
+To download the dataset and instructions for training anomaly detection models, please use the following link:
+
+
+[Retails](https://).
+
+
+
+
 ## Citation
 If you find our work useful, please consider citing: 
 
