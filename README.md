@@ -24,4 +24,20 @@ RetailS is significantly larger and more diverse than previous retail security d
 | Staged Test          |   20,578    |  20,335       | 898  | 6 |
 
 
+## Structure of Annotations & Labels
+1-Annotations (.pkl)
+Each video in the RetailS dataset has a corresponding annotation file in pickle format. The files are named according to the camera and video ID (e.g., cam1_video101.pkl).
+The data is structured as a nested dictionary where each frame maps to the detected individuals and their respective pose data:
+{
+  "Frame_Number": {
+    "Person_ID": [
+        np.array([x, y, w, h]),      # Bounding Box (XYWH)
+        np.array([[x, y, c], ...])   # 17 Keypoints (XYC - COCO17 format)
+    ]
+  }
+}
+
+
+
+
 
