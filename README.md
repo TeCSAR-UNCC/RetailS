@@ -12,7 +12,45 @@ We present a privacy-preserving, pose-based framework for shoplifting detection 
 - Continual Learning Pipeline: A three-stage framework (Filtering, Collection, Training) that allows for periodic model updates in under 30 minutes on edge hardware.
 - $H_{PRS}$ Metric: A new evaluation criterion that balances Precision, Recall, and Specificity to minimize false alarms in real-world retail settings.
 
-## Dataset Statistics: RetailS
+
+## Retails Dataset Description
+### Features 
+1- **Privacy-Preserving**
+The dataset includes pose sequences derived from CCTV footage, with anonymized human identities and no raw pixel-level video data. This ensures full following of privacy regulations and safeguards individual privacy.
+
+2- **Real-World Data**: PoseLift is developed through close collaboration with a local retail store, ensuring that it captures authentic shoplifting incidents alongside normal shopping behaviors in real-world retail environment.
+
+3- **Pose-Based Annotations**: PoseLift provides bounding boxes, person IDs, and human pose annotations instead of raw videos to support privacy-preserving shoplifting detection.
+
+4- **Camera Views**: The dataset utilizes videos from 6 indoor cameras (C1 to C6) positioned across various aisles and locations in a local retail store in the USA. 
+<div align="center">
+  <img src="Samples/Camera_Views.png" alt="Cameras" width="500">
+  <p><em>Figure 1: Segmented images from six camera views within a retail store, used in the PoseLift dataset.</em></p>
+</div>
+
+5- **Diverse Shoplifting Behaviors**: The dataset includes a wide range of normal shopping behaviors alongside real shoplifting activities. The shoplifting behaviors demonstrated in these videos included actions such as placing items into pockets, placing them in bags, and hiding them under shirts, jackets, and pants. 
+
+
+### Data Processing
+
+- **Pose Data Extraction**: Anonymized pose data is extracted from the original videos using state-of-the-art models, including YOLOv8 for object detection, ByteTrack for person tracking, and HRNet for human pose estimation.
+
+- **Data Modifications**: To address occlusions caused by store shelves, specific areas of interest for each camera were defined. Missing poses were interpolated, and data smoothing was applied for continuity.
+
+- **Annotations and Shoplifting Labels**:
+1-Annotations (.pkl)
+Each video in the RetailS dataset has a corresponding annotation file in pickle format. The files are named according to the camera and video ID (e.g., cam1_video101.pkl).
+The data is structured as a nested dictionary where each frame maps to the detected individuals and their respective pose data. Each file offer detailed frame-by-frame annotations, including Person ID, and keypoints for each individual in the frame. The annotations are organized in a dictionary structure, with each key representing a specific frame number. For each frame, the annotation includes:
+- **Person ID**: A unique identifier for each individual detected in the frame.
+
+- **Keypoints**: Represented in the XYC format, where X and Y are the coordinates of key points, and C is the confidence score associated with the detection of each keypoint.
+
+2-Anomaly Labels (.npy)
+Anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the video.
+0: Normal behavior (e.g., browsing, walking).
+1: Shoplifting anomaly (e.g., pocket or bag concealment).
+
+### Dataset Statistics
 
 RetailS is significantly larger and more diverse than previous retail security datasets.
 
@@ -23,16 +61,6 @@ RetailS is significantly larger and more diverse than previous retail security d
 |Real-world Test          |   2,432    |  1,933       | 53    | 6 | 
 | Staged Test          |   20,578    |  20,335       | 898  | 6 |
 
-
-## Structure of Annotations & Labels
-1-Annotations (.pkl)
-Each video in the RetailS dataset has a corresponding annotation file in pickle format. The files are named according to the camera and video ID (e.g., cam1_video101.pkl).
-The data is structured as a nested dictionary where each frame maps to the detected individuals and their respective pose data:
-
-2-Anomaly Labels (.npy)
-Anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the video.
-0: Normal behavior (e.g., browsing, walking).
-1: Shoplifting anomaly (e.g., pocket or bag concealment).
 
 
 ## Execution Pipeline
