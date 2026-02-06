@@ -46,7 +46,7 @@ Performance of state-of-the-art models on the RetailS Real-world Test Set:
 
 
 
-##Citation
+## Citation
 If you find our work useful, please consider citing: 
 
 ```bibetex
@@ -60,7 +60,9 @@ If you find our work useful, please consider citing:
 
 
 
-
+## Contact
+If you have any questions or need assistance, please contact the authors at nrashvan@charlotte.edu, and syao@uncc.edu
+.
 
 
 
