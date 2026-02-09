@@ -21,7 +21,7 @@ The framework is divided into three operational stages to mirror IoT deployment:
 ![Periodic Adaption Pipeline](Samples/Pipeline_overview.png)
 
 *Fig 1:.*  A conceptual overview of our IoT-oriented continual
-unsupervised anomaly detection pipeline with pseudo filtering, collection, and training. Model updates are designed to run incrementally on edge-grade devices, enabling scalable deployment across distributed surveillance nodes.
+unsupervised anomaly detection pipeline with pseudo filtering, collection, and training. Model updates are designed to run incrementally on edge-grade devices, enabling scalable deployment across distributed surveillance nodes.
 
 ## Retails Dataset Description
 ### Features 
