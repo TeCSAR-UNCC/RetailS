@@ -32,6 +32,10 @@ The dataset includes pose sequences derived from CCTV footage, with anonymized h
 5- **Diverse Shoplifting Behaviors**: The dataset includes a wide range of normal shopping behaviors alongside real shoplifting activities. The shoplifting behaviors demonstrated in these videos included actions such as placing items into pockets, placing them in bags, and hiding them under shirts, jackets, and pants. 
 <table>
   <tr>
+     <td style="text-align: center;">
+      <img src="Samples/1.gif" height="300" width="300" /><br />
+      Hiding an item in their pants
+    </td>
     <td style="text-align: center;">
       <img src="Samples/2.gif" height="300" width="300" /><br />
       Hiding an item under their T-shirt
