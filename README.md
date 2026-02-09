@@ -55,7 +55,6 @@ The dataset includes pose sequences derived from CCTV footage, with anonymized h
   </tr>
 </table
 
-
 ### Data Processing
 
 - **Pose Data Extraction**: Anonymized pose data is extracted from the original videos using state-of-the-art models, including YOLOv8 for object detection, ByteTrack for person tracking, and HRNet for human pose estimation.
