@@ -85,9 +85,7 @@ Additionally, anomaly labels are provided as binary NumPy arrays (.npy) for ever
 
 Our periodic adaptation framework outperforms offline baselines in 91.6% of evaluations.
 
-
 ![Model performance trends at one-day update frequency](Samples/Pipeline_2.png)
-
 
 
 <sub> Table 2:  Average training time (in minutes) per update for continual learning with half-day and one-day data batches across three state-of-the-art pose-based models.
