@@ -14,6 +14,7 @@ We present a privacy-preserving, pose-based framework for shoplifting detection 
 
 ## Periodic Adaption Pipeline
 The framework is divided into three operational stages to mirror IoT deployment:
+
 1- Filtering: Uses adaptive thresholds ($F1$ or $H_{PRS}$) to screen incoming streams.
 2-Collection: Aggregates pseudo-labeled normal frames into buffered sets.
 3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
