@@ -71,16 +71,12 @@ Additionally, anomaly labels are provided as binary NumPy arrays (.npy) for ever
 
 ### Dataset Statistics
 
-RetailS is significantly larger and more diverse than previous retail security datasets.
-
-<sub> Table 1: 
+<sub> Table 1: Summary of Normal and Shoplifting Frames, Events, and Camera Views in RetailS dataset 
 | Subsets         | Normal Frames | Shoplifting Events| Shoplifting Frames | Camera Views |
 |------------------|---------|-------|-----|-----|
-| RetailS Train         |   19,971,589   | 0        | 0   | 6 |
-|Real-world Test          |   2,432    |  1,933       | 53    | 6 | 
-| Staged Test          |   20,578    |  20,335       | 898  | 6 |
-
-
+| RetailS Train Set        |   19,971,589   | 0        | 0   | 6 |
+|Retails Real-world Test Set         |   2,432    |  1,933       | 53    | 6 | 
+| Retails Staged Test Set      |   20,578    |  20,335       | 898  | 6 |
 
 
 
