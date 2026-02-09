@@ -28,16 +28,15 @@ unsupervised anomaly detection pipeline with pseudo filtering, collection, and t
 
 ## Retails Dataset Description
 ### Features 
-1- **Privacy-Preserving**:
-The dataset includes pose sequences derived from CCTV footage, with anonymized human identities and no raw pixel-level video data. This ensures full following of privacy regulations and safeguards individual privacy.
+1- **Privacy-Preserving**: The dataset includes pose sequences derived from CCTV footage, with anonymized human identities and no raw pixel-level video data. This ensures full following of privacy regulations and safeguards individual privacy.
 
-2- **Real-World Data**: PoseLift is developed through close collaboration with a local retail store, ensuring that it captures authentic shoplifting incidents alongside normal shopping behaviors in real-world retail environment.
+2- **Environemntal Consistency**: Unlike prior datasets recorded in static labs, our staged shoplifting events were recorded in the same real-world retail environment as the normal and authentic shoplifting sets. 
 
 3- **Pose-Based Annotations**: PoseLift provides bounding boxes, person IDs, and human pose annotations instead of raw videos to support privacy-preserving shoplifting detection.
 
-4- **Camera Views**: The dataset utilizes videos from 6 indoor cameras (C1 to C6) positioned across various aisles and locations in a local retail store in the USA. 
+4- **Camera Views**: The dataset utilizes videos from 6 indoor cameras positioned across various aisles and locations in a local retail store in the USA. 
 
-5- **Diverse Shoplifting Behaviors**: The dataset includes a wide range of normal shopping behaviors alongside real shoplifting activities. The shoplifting behaviors demonstrated in these videos included actions such as placing items into pockets, placing them in bags, and hiding them under shirts, jackets, and pants. 
+5- **Diverse Shoplifting Behaviors**: The dataset includes a wide range of normal shopping behaviors alongside real and staged shoplifting activities. The shoplifting behaviors demonstrated in these videos included actions such as placing items into pockets, placing them in bags, and hiding them under shirts, jackets, and pants. 
 <table>
   <tr>
      <td style="text-align: center;">
