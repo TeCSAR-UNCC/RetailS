@@ -81,18 +81,17 @@ Additionally, anomaly labels are provided as binary NumPy arrays (.npy) for ever
 
 
 ## Benchmarking Results
-Model Performance (Offline vs. Periodic)
+### Model Performance (Offline vs. Periodic)
+
 Our periodic adaptation framework outperforms offline baselines in 91.6% of evaluations.
 
 <sub> Table 2:  Average training time (in minutes) per update for continual learning with half-day and one-day data batches across three state-of-the-art pose-based models.
 
 |    Model    | Half-day data | One-day data| 
 |------------------|---------|-------|
-| STG-NF         |   3.5  |7.3       |
-|TSGAD         |   26.8    |  65       |  
-|SPARTA         |   2.05    |  3.2       |  
-
-
+| STG-NF         |   3.5  |7.3 |
+|TSGAD         |   26.8    |  65 |  
+|SPARTA         |   2.05    |  3.2  |  
 
 
 
@@ -122,14 +121,8 @@ If you find our work useful, please consider citing:
 ```
 
 
-
-
-
-
-
 ## Contact
-If you have any questions or need assistance, please contact the authors at nrashvan@charlotte.edu, and syao@uncc.edu
-.
+If you have any questions or need assistance, please contact the authors at nrashvan@charlotte.edu, and syao@uncc.edu.
 
 
 
