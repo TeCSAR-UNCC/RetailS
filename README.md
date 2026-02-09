@@ -28,7 +28,7 @@ unsupervised anomaly detection pipeline with pseudo filtering, collection, and t
 
 ## Retails Dataset Description
 ### Features 
-1- **Privacy-Preserving**
+1- **Privacy-Preserving**:
 The dataset includes pose sequences derived from CCTV footage, with anonymized human identities and no raw pixel-level video data. This ensures full following of privacy regulations and safeguards individual privacy.
 
 2- **Real-World Data**: PoseLift is developed through close collaboration with a local retail store, ensuring that it captures authentic shoplifting incidents alongside normal shopping behaviors in real-world retail environment.
