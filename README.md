@@ -18,7 +18,7 @@ The framework is divided into three operational stages to mirror IoT deployment:
 2-Collection: Aggregates pseudo-labeled normal frames into buffered sets.
 3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
 
-![Periodic Adaption Pipeline](Samples/pipeline_overview.png)
+![Periodic Adaption Pipeline](Samples/Pipeline_overview.png)
 [cite_start]*Fig 1:.*
 
 
