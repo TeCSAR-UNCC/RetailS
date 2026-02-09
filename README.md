@@ -60,18 +60,14 @@ unsupervised anomaly detection pipeline with pseudo filtering, collection, and t
 
 - **Data Modifications**: To address occlusions caused by store shelves, specific areas of interest for each camera were defined. Missing poses were interpolated, and data smoothing was applied for continuity.
 
-- **Annotations and Shoplifting Labels**:
+- **Annotations and Shoplifting Labels**: Each video in the RetailS dataset has a corresponding annotation file in pickle format. The files are named according to the camera and video ID (e.g., cam1_video101.pkl) and provide detailed frame-level information for all detected individuals. Specifically, each annotation file includes:
+- **Person ID**: A unique identifier assigned to each detected individual.
+- **Frame ID**: The frame index within the video sequence.
+- **Keypoints**: Pose keypoints represented in XYC format, where X and Y denote the spatial coordinates of each joint, and C indicates the confidence score of the keypoint detection.
 
-Each video in the RetailS dataset has a corresponding annotation file in pickle format. The files are named according to the camera and video ID (e.g., cam1_video101.pkl).
-The data is structured as a nested dictionary where each frame maps to the detected individuals and their respective pose data. Each file offer detailed frame-by-frame annotations, including Person ID, and keypoints for each individual in the frame. The annotations are organized in a dictionary structure, with each key representing a specific frame number. For each frame, the annotation includes:
-- **Person ID**: A unique identifier for each individual detected in the frame.
-
-- **Keypoints**: Represented in the XYC format, where X and Y are the coordinates of key points, and C is the confidence score associated with the detection of each keypoint.
-
-Additionally, anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the video. The anomaly labels are provided in .npy format, with one label file for each video. The labeling follows the same naming pattern as the corresponding video file, ensuring easy mapping between the pickle file and its labels. So,each label file contains a NumPy array of binary values (0s and 1s), categorizing all frames into two groups: normal behavior or shoplifting. The length of the array corresponds to the total number of frames in the respective video. A value of 0 indicates a "normal" frame, where no shoplifting behavior is detected. A value of 1 indicates an "anomalous" frame, where shoplifting behavior is identified based on the observed actions within that frame.
+Additionally, anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the test sets. The labeling follows the same naming pattern as the corresponding video file, ensuring easy mapping between the pickle file and its labels. The length of the array corresponds to the total number of frames in the respective video. A value of 0 indicates a "normal" frame, where no shoplifting behavior is detected. A value of 1 indicates an "anomalous" frame, where shoplifting behavior is identified based on the observed actions within that frame.
 0: Normal behavior (e.g., browsing, walking).
 1: Shoplifting anomaly (e.g., pocket or bag concealment).
-
 
 ### Dataset Statistics
 
