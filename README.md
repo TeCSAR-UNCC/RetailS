@@ -12,6 +12,18 @@ We present a privacy-preserving, pose-based framework for shoplifting detection 
 - IoT-Optimized Metrics: Introduction of the $H_{PRS}$ Score (harmonic mean of Precision, Recall, and Specificity) to strictly control false alarms in retail environments
 - Privacy-Preserving: Represents human activity through anonymized pose sequences (COCO17 format), removing raw pixel information.
 
+## Periodic Adaption Pipeline
+The framework is divided into three operational stages to mirror IoT deployment:
+1- Filtering: Uses adaptive thresholds ($F1$ or $H_{PRS}$) to screen incoming streams.
+2-Collection: Aggregates pseudo-labeled normal frames into buffered sets.
+3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
+
+
+
+
+
+
+
 
 ## Retails Dataset Description
 ### Features 
@@ -25,6 +37,22 @@ The dataset includes pose sequences derived from CCTV footage, with anonymized h
 4- **Camera Views**: The dataset utilizes videos from 6 indoor cameras (C1 to C6) positioned across various aisles and locations in a local retail store in the USA. 
 
 5- **Diverse Shoplifting Behaviors**: The dataset includes a wide range of normal shopping behaviors alongside real shoplifting activities. The shoplifting behaviors demonstrated in these videos included actions such as placing items into pockets, placing them in bags, and hiding them under shirts, jackets, and pants. 
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="Samples/1.gif" height="300" width="300" /><br />
+      Hiding an item in their pants
+    </td>
+    <td style="text-align: center;">
+      <img src="Samples/2.gif" height="300" width="300" /><br />
+      Hiding an item under their T-shirt
+    </td>
+    <td style="text-align: center;">
+      <img src="Samples/3.gif" height="300" width="300" /><br />
+      Placing an item in their pockets
+    </td>
+  </tr>
+</table
 
 
 ### Data Processing
@@ -60,11 +88,7 @@ RetailS is significantly larger and more diverse than previous retail security d
 
 
 
-## Execution Pipeline
-The framework is divided into three operational stages to mirror IoT deployment:
-1- Filtering: Uses adaptive thresholds ($F1$ or $H_{PRS}$) to screen incoming streams.
-2-Collection: Aggregates pseudo-labeled normal frames into buffered sets.
-3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
+
 
 ## Benchmarking Results
 Model Performance (Offline vs. Periodic)
