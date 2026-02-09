@@ -89,6 +89,7 @@ Our periodic adaptation framework outperforms offline baselines in 91.6% of eval
 
 
 *Fig 2:.*  Model performance trends at one-day update frequency.
+
 <sub> Table 2:  Average training time (in minutes) per update for continual learning with half-day and one-day data batches across three state-of-the-art pose-based models.
 
 |    Model    | Half-day data | One-day data| 
