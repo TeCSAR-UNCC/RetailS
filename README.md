@@ -84,7 +84,6 @@ Our periodic adaptation framework outperforms offline baselines in 91.6% of eval
 ## Dataset Download Instructions
 To download the dataset and instructions for training anomaly detection models, please use the following link:
 
-
 [Retails](https://).
 
 
