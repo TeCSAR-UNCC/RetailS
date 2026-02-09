@@ -86,9 +86,7 @@ Additionally, anomaly labels are provided as binary NumPy arrays (.npy) for ever
 Our periodic adaptation framework outperforms offline baselines in 91.6% of evaluations.
 
 
-![Model performance trends at one-day update frequency](Samples/Pipeline_2.png)
-
-*Fig 2:.*  
+*Fig 2:.* :![Model performance trends at one-day update frequency](Samples/Pipeline_2.png)
 
 
 
