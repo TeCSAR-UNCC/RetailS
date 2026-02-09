@@ -72,10 +72,10 @@ Our periodic adaptation framework outperforms offline baselines in 91.6% of eval
 <sub> Table 2:  Average training time (in minutes) per update for continual learning with half-day and one-day data batches across three state-of-the-art pose-based models.
 
 |    Model    | Half-day data | One-day data| 
-|------------------|---------|-------|-----|-----|
-| STG-NF         |   19,971,589   | 0        | 0   | 6 |
-|TSGAD         |   2,432    |  1,933       | 53    | 6 | 
-|SPARTA         |   2,432    |  1,933       | 53    | 6 | 
+|------------------|---------|-------|
+| STG-NF         |   3.5  |7.3       |
+|TSGAD         |   26.8    |  65       |  
+|SPARTA         |   2.05    |  3.2       |  
 
 
 
