@@ -7,10 +7,10 @@ We present a privacy-preserving, pose-based framework for shoplifting detection 
 
 ## Key Features
 
-- Privacy-Preserving: Represents human activity through anonymized pose sequences (COCO17 format), removing raw pixel information.
+- Periodic Adaptation Pipeline: A three-stage (Filtering, Collecting, Training) framework designed for periodic model updates on unlabeled streaming data.
 - RetailS Dataset: A large-scale, multi-camera dataset featuring nearly 20M normal frames and both staged and authentic shoplifting incidents
-- Continual Learning Pipeline: A three-stage framework (Filtering, Collection, Training) that allows for periodic model updates in under 30 minutes on edge hardware.
-- $H_{PRS}$ Metric: A new evaluation criterion that balances Precision, Recall, and Specificity to minimize false alarms in real-world retail settings.
+- IoT-Optimized Metrics: Introduction of the $H_{PRS}$ Score (harmonic mean of Precision, Recall, and Specificity) to strictly control false alarms in retail environments
+- Privacy-Preserving: Represents human activity through anonymized pose sequences (COCO17 format), removing raw pixel information.
 
 
 ## Retails Dataset Description
@@ -47,7 +47,6 @@ Anomaly labels are provided as binary NumPy arrays (.npy) for every frame in the
 1: Shoplifting anomaly (e.g., pocket or bag concealment).
 
 
-
 ### Dataset Statistics
 
 RetailS is significantly larger and more diverse than previous retail security datasets.
@@ -68,7 +67,17 @@ The framework is divided into three operational stages to mirror IoT deployment:
 3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
 
 ## Benchmarking Results
-Performance of state-of-the-art models on the RetailS Real-world Test Set:
+Model Performance (Offline vs. Periodic)
+Our periodic adaptation framework outperforms offline baselines in 91.6% of evaluations.
+<sub> Table 2:  Average training time (in minutes) per update for continual learning with half-day and one-day data batches across three state-of-the-art pose-based models.
+
+|    Model    | Half-day data | One-day data| 
+|------------------|---------|-------|-----|-----|
+| STG-NF         |   19,971,589   | 0        | 0   | 6 |
+|TSGAD         |   2,432    |  1,933       | 53    | 6 | 
+|SPARTA         |   2,432    |  1,933       | 53    | 6 | 
+
+
 
 
 
