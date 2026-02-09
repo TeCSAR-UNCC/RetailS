@@ -1,7 +1,7 @@
 # From Offline to Periodic Adaptation for Pose-Based Shoplifting Detection in Real-world Retail Security
 ## Overview
 This Github repository contains the official implementation and dataset details for the paper:
-"From Offline to Periodic Adaptation for Pose-Based Shoplifting Detection in Real-world Retail Security" published in [IEEE Internet of Things Journal]([https://www.researchgate.net/publication/400393842_From_Offline_to_Periodic_Adaptation_for_Pose-Based_Shoplifting_Detection_in_Real-world_Retail_Security](https://ieeexplore.ieee.org/abstract/document/11370135)).  
+"From Offline to Periodic Adaptation for Pose-Based Shoplifting Detection in Real-world Retail Security" published in [IEEE Internet of Things Journal][(https://ieeexplore.ieee.org/abstract/document/11370135)].  
 We present a privacy-preserving, pose-based framework for shoplifting detection designed for on-site IoT deployment. Our pipeline enables edge devices to adapt from streaming, unlabeled data through continual unsupervised learning, overcoming environmental drift and changing shopper behaviors.
 
 
