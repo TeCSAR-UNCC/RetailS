@@ -69,6 +69,7 @@ The framework is divided into three operational stages to mirror IoT deployment:
 ## Benchmarking Results
 Model Performance (Offline vs. Periodic)
 Our periodic adaptation framework outperforms offline baselines in 91.6% of evaluations.
+
 <sub> Table 2:  Average training time (in minutes) per update for continual learning with half-day and one-day data batches across three state-of-the-art pose-based models.
 
 |    Model    | Half-day data | One-day data| 
@@ -93,13 +94,22 @@ To download the dataset and instructions for training anomaly detection models, 
 If you find our work useful, please consider citing: 
 
 ```bibetex
-@article{,
-  title={},
-  author={},
-  journal={},
-  year={}
-}
+@ARTICLE{11370135,
+  author={Yao, Shanle and Rashvand, Narges and Pazho, Armin Danesh and Tabkhi, Hamed},
+  journal={IEEE Internet of Things Journal}, 
+  title={From Offline to Periodic Adaptation for Pose-Based Shoplifting Detection in Real-world Retail Security}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Training;Filtering;Cameras;Internet of Things;Anomaly detection;Adaptation models;Pipelines;Image edge detection;Real-time systems;Privacy;Shoplifting;artificial intelligence;IoT;computer vision;application;continual learning;dataset;real-world;edge;anomaly},
+  doi={10.1109/JIOT.2026.3660205}}
+
 ```
+
+
+
+
 
 
 
