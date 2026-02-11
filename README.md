@@ -103,7 +103,7 @@ Our periodic adaptation framework outperforms offline baselines in 91.6% of eval
 ## Dataset Download Instructions
 To download the dataset, please use the following link:
 
-[Retails](https://).
+[Retails](https://drive.google.com/file/d/1uBCvDm7QdYjxwS9HT63lYaucATrecNuH/view?usp=drive_link).   
 
 
 ## Citation
