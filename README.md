@@ -60,7 +60,7 @@ unsupervised anomaly detection pipeline with pseudo filtering, collection, and t
 
 - **Data Modifications**: To address occlusions caused by store shelves, specific areas of interest for each camera were defined. Missing poses were interpolated, and data smoothing was applied for continuity.
 
-- **Annotations and Shoplifting Labels**: Each video in the RetailS dataset has a corresponding annotation file in pickle format. The files are named according to the camera and video ID (e.g., cam1_video101.pkl) and provide detailed frame-level information for all detected individuals. Specifically, each annotation file includes:
+- **Annotations and Shoplifting Labels**: Each video in the RetailS dataset has a corresponding annotation file in JSON format. The files are named according to the camera and video ID and provide detailed frame-level information for all detected individuals. Specifically, each annotation file includes:
 - **Person ID**: A unique identifier assigned to each detected individual.
 - **Frame ID**: The frame index within the video sequence.
 - **Keypoints**: Pose keypoints represented in XYC format, where X and Y denote the spatial coordinates of each joint, and C indicates the confidence score of the keypoint detection.
