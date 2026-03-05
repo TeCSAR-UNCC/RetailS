@@ -12,19 +12,6 @@ We present a privacy-preserving, pose-based framework for shoplifting detection 
 - IoT-Optimized Metrics: Introduction of the $H_{PRS}$ Score (harmonic mean of Precision, Recall, and Specificity) to strictly control false alarms in retail environments
 - Privacy-Preserving: Represents human activity through anonymized pose sequences (COCO17 format), removing raw pixel information.
 
-## Periodic Adaption Pipeline
-The framework is divided into three operational stages to mirror IoT deployment:
-
-1- Filtering: Uses adaptive thresholds ($F1$ or $H_{PRS}$) to screen incoming streams.
-
-2-Collection: Aggregates pseudo-labeled normal frames into buffered sets.
-
-3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
-
-![Periodic Adaption Pipeline](Samples/Pipeline_overview.png)
-
-*Fig 1:.*  A conceptual overview of our IoT-oriented continual
-unsupervised anomaly detection pipeline with pseudo filtering, collection, and training. Model updates are designed to run incrementally on edge-grade devices, enabling scalable deployment across distributed surveillance nodes.
 
 ## Retails Dataset Description
 ### Features 
@@ -53,6 +40,14 @@ unsupervised anomaly detection pipeline with pseudo filtering, collection, and t
     </td>
   </tr>
 </table>
+
+
+
+## Dataset Download Instructions
+To download the dataset, please use the following link:
+
+[Retails Dataset](https://drive.google.com/file/d/1uBCvDm7QdYjxwS9HT63lYaucATrecNuH/view?usp=drive_link).   
+
   
 ### Data Processing
 
@@ -99,11 +94,21 @@ Our periodic adaptation framework outperforms offline baselines in 91.6% of eval
 |SPARTA         |   2.05    |  3.2  |  
 
 
+## Periodic Adaption Pipeline
+The framework is divided into three operational stages to mirror IoT deployment:
 
-## Dataset Download Instructions
-To download the dataset, please use the following link:
+1- Filtering: Uses adaptive thresholds ($F1$ or $H_{PRS}$) to screen incoming streams.
 
-[Retails Dataset](https://drive.google.com/file/d/1uBCvDm7QdYjxwS9HT63lYaucATrecNuH/view?usp=drive_link).   
+2-Collection: Aggregates pseudo-labeled normal frames into buffered sets.
+
+3-Training: Periodically fine-tunes the model (Half-day or Daily cycles) to capture local drift.
+
+![Periodic Adaption Pipeline](Samples/Pipeline_overview.png)
+
+*Fig 1:.*  A conceptual overview of our IoT-oriented continual
+unsupervised anomaly detection pipeline with pseudo filtering, collection, and training. Model updates are designed to run incrementally on edge-grade devices, enabling scalable deployment across distributed surveillance nodes.
+
+
 
 
 ## Citation
