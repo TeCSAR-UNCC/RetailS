@@ -108,7 +108,8 @@ The framework is divided into three operational stages to mirror IoT deployment:
 *Fig 1:.*  A conceptual overview of our IoT-oriented continual
 unsupervised anomaly detection pipeline with pseudo filtering, collection, and training. Model updates are designed to run incrementally on edge-grade devices, enabling scalable deployment across distributed surveillance nodes.
 
-
+## Licensing and Commercial Use
+For questions regarding licensing and commercial use of the RetailS dataset, please contact [invent@charlotte.edu](mailto:invent@charlotte.edu).
 
 
 ## Citation
